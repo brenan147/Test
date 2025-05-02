@@ -3,74 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airpods Gen 4 - Shop Now!</title>
+    <title>Item Catalog</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
-            background-color: #f8f8f8;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .product-card {
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            text-align: center;
-            max-width: 500px;
-            width: 90%;
-        }
-        .product-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 30px;
-        }
-        .product-title {
-            font-size: 2.8em;
+            background-color: #f4f4f4;
             color: #333;
-            margin-bottom: 15px;
-            letter-spacing: -0.5px;
+            line-height: 1.6;
         }
-        .product-description {
-            color: #555;
-            line-height: 1.7;
-            margin-bottom: 35px;
-        }
-        .buy-button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 18px 40px;
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 30px;
             border-radius: 8px;
-            font-size: 1.3em;
-            cursor: pointer;
-            transition: background-color 0.2s ease-in-out;
-            text-decoration: none;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
-        .buy-button:hover {
-            background-color: #0056b3;
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
         }
-        .tagline {
+        .item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        .item-image {
+            max-width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        .item-details {
+            flex-grow: 1;
+        }
+        .item-title {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .item-description {
             color: #777;
-            font-style: italic;
-            margin-top: 25px;
-            font-size: 0.95em;
+            margin-bottom: 10px;
+        }
+        .contact-link {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="product-card">
-        <img src="airpods_gen4.jpeg" alt="Airpods Gen 4 $40" class="airpods_gen4.jpeg">
-        <h1 class="product-title">Airpods Gen 4</h1>
-        <p class="product-description">
-            Immerse yourself in a world of premium sound with the latest Airpods Gen 4. Experience crystal-clear audio, enhanced comfort, and seamless connectivity. Elevate your listening experience to new heights.
-        </p>
-        <a href="mailto:your-email@example.com?subject=Order%20Inquiry%20-%20Airpods%20Gen%204&body=Hello,%20I%20am%20interested%20in%20purchasing%20the%20Airpods%20Gen%204.%20Please%20provide%20information%20on%20pricing%20and%20availability." class="buy-button">Buy</a>
-        <p class="tagline">The future of sound is here.</p>
+    <div class="container">
+        <h1>Our Awesome Items</h1>
+
+        <div class="item">
+            <img src="airpods_gen4.jpeg" alt="Airpods Gen 4" class="item-image">
+            <div class="item-details">
+                <h2 class="item-title">Airpods Gen 4</h2>
+                <p class="item-description">Experience the latest in wireless audio technology with the new Airpods Gen 4. Featuring enhanced sound, improved battery life, and a comfortable fit.</p>
+                </div>
+        </div>
+
+        <div class="item">
+            <img src="sp5der_hoodie.jpg" alt="Sp5der Hoodie" class="item-image">
+            <div class="item-details">
+                <h2 class="item-title">Sp5der Hoodie</h2>
+                <p class="item-description">Stay stylish and comfortable with the trendy Sp5der Hoodie. Made with premium materials for a soft and cozy feel. Available in various sizes and colors.</p>
+                </div>
+        </div>
+
+        <div class="item">
+            <img src="choco_musk_cologne.jpg" alt="Choco Musk Cologne" class="item-image">
+            <div class="item-details">
+                <h2 class="item-title">Choco Musk Cologne</h2>
+                <p class="item-description">Indulge your senses with the warm and inviting scent of Choco Musk Cologne. A unique fragrance that combines sweet chocolate notes with a hint of musk.</p>
+                </div>
+        </div>
+
+        <a href="mailto:brenanja.hertenst@huttoisd.org" class="contact-link">brenanja.hertenst@huttoisd.org</a>
     </div>
 </body>
 </html>
